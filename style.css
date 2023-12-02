@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&family=Shantell+Sans:wght@300&display=swap");
+
+:root {
+  --darkblue: hsl(229, 74%, 18%);
+  --brightblue: #1cf;
+  --pinkpurple: rgb(242, 149, 248);
+}
+
+/* nav */
+
+/* Setting the stroke to pinkpurple using rgb values rgb(242, 149, 248)*/
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(242, 149, 248)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.navbar {
+  position: sticky;
+  top: 0px;
+  z-index: 199;
+  background-color: var(--darkblue);
+  padding: 20px;
+}
+
+.navbar-brand {
+  color: var(--pinkpurple);
+}
+
+.nav-link {
+  text-align: center;
+  transition: 1s linear;
+  color: var(--pinkpurple);
+}
+
+.nav-link:hover {
+  color: var(--brightblue);
+  cursor: pointer;
+}
+
+/* hero background image */
+.bgimage {
+  height: 100vh;
+  background: url("./images/matrixbackground.jpg");
+  background-size: cover;
+  position: relative;
+}
+/* text css above hero image*/
+.hero_title {
+  font-size: 4.5rem;
+}
+.hero_desc {
+  font-size: 2rem;
+  color: var(--brightblue);
+}
+.hero-text {
+  width: 80%;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.549);
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-title > span {
+  font-family: "Lilita One", sans-serif;
+  color: hsl(55, 100%, 50%);
+}
+
+.hero-title > .fa-terminal,
+.hero-title > .fa-code {
+  color: blueviolet;
+  font-size: 30px;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 996px) {
+  .nav-item {
+    padding: 15px;
+  }
+
+  .nav-link:hover {
+    color: var(--brightblue);
+    cursor: pointer;
+    box-shadow: 0px 6px 0px 0px var(--brightblue);
+  }
+}
