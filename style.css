@@ -5,22 +5,15 @@
   --brightblue: #1cf;
   --pinkpurple: rgb(242, 149, 248);
 }
+/* general  */
+h2,
+h3 {
+  font-family: "Lilita One", sans-serif;
+}
 
-/* nav */
-
+/* ==================navigation bar ======================*/
 /* Setting the stroke to pinkpurple using rgb values rgb(242, 149, 248)*/
-.avatar {
-  max-height: 200px;
-  padding: 20px;
-  margin: 0 auto;
-}
 
-#about {
-  background-color: hsl(0, 9%, 98%);
-}
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(242, 149, 248)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-}
 .navbar {
   position: sticky;
   top: 0px;
@@ -30,7 +23,12 @@
 }
 
 .navbar-brand {
+  transition: 1s linear;
   color: var(--pinkpurple);
+}
+
+.navbar-brand:hover {
+  color: var(--brightblue);
 }
 
 .nav-link {
@@ -48,7 +46,22 @@
   cursor: pointer;
 }
 
+/* changing bootstrap's icon  */
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(242, 149, 248)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/* =============== hero section  ==================*/
 /* hero background image */
+.avatar {
+  max-height: 200px;
+  padding: 20px;
+  margin: 0 auto;
+}
+#about {
+  background-color: hsl(0, 9%, 98%);
+}
+
 .bgimage {
   height: 100vh;
   background-image: linear-gradient(
@@ -90,10 +103,10 @@
   color: blueviolet;
   font-size: 30px;
 }
-.fa-solid,
-.fa-brands {
-  font-size: 3rem;
-  margin-bottom: 5px;
+
+/* ==========  skills section =========*/
+.imageAboutPage {
+  width: 100%;
 }
 
 .skills-section {
@@ -113,14 +126,17 @@
   text-align: center;
 }
 
-.imageAboutPage {
-  width: 100%;
+.fa-solid,
+.fa-brands {
+  font-size: 3rem;
+  margin-bottom: 5px;
 }
 
 a:active {
   color: var(--brightblue);
 }
 
+/* ====== footer section ======*/
 .footer-container {
   background-color: var(--darkblue);
 }
@@ -149,6 +165,7 @@ a:active {
   box-shadow: 0 2px 2px white;
 }
 
+/* ========================================================= */
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 996px) {
   .nav-item {
@@ -160,9 +177,4 @@ a:active {
     cursor: pointer;
     box-shadow: 0px 6px 0px 0px var(--brightblue);
   }
-}
-
-h2,
-h3 {
-  font-family: "Lilita One", sans-serif;
 }
