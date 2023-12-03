@@ -9,6 +9,7 @@ Very basic website created with Bootstrap and some customised CSS/HTML
 ## Usage
 
 Link to deployed page
+https://vilmaglynn.github.io/bootstrap-portfolio/
 
 
 
