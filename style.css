@@ -80,7 +80,7 @@ a:active {
       rgba(26, 24, 24, 0.9),
       rgba(36, 36, 36, 0.7)
     ),
-    url(../images/matrixbackground.jpg);
+    url(./images/matrixbackground.jpg);
   background-size: cover;
   position: relative;
 }
