@@ -6,6 +6,11 @@
   --pinkpurple: rgb(242, 149, 248);
 }
 /* general  */
+
+html {
+  scroll-padding-top: 5rem;
+}
+
 h2,
 h3 {
   font-family: "Lilita One", sans-serif;
